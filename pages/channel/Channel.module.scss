@@ -1,0 +1,62 @@
+@import "../../variable.scss";
+.main{
+    width: 100%;
+  
+}
+.banner{
+    width: 100%;
+     position: relative;
+    height: 300px;
+    object-fit: cover;
+    top: 70px;
+}
+.channel{
+    background-color: $yt-dark;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 100px 0 120px;
+
+}
+.detail{
+
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+    img{
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+    }
+    h4{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.3;
+        color: $white;
+    }
+    p{
+         font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color:$text-gray;
+        margin: 8px 0 8px 0;
+    }
+}
+    .sub_btn{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        color: $white;
+        background-color: $deep-gray;
+        border: 0;
+        border-radius: 15px;
+        font-size: 16px;
+        padding: 12px;
+        height: 50px;
+        cursor: pointer;
+        &:hover{
+            background-color: $dark-gray;
+        }
+       
+    }

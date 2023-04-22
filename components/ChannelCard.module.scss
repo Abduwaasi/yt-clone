@@ -1,0 +1,19 @@
+@import "../variable.scss";
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center{
+        width: 60%;
+    }
+
+   .title{
+    text-align: center;
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+   }
+  
+}

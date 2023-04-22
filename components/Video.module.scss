@@ -1,0 +1,9 @@
+@import "../variable.scss";
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    background-color: $yt-dark;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

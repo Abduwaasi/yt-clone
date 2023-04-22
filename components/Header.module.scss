@@ -1,0 +1,111 @@
+@import "../variable.scss";
+
+.header{
+    background-color: $yt-dark;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    & .left{
+       flex: 0 1 12%;
+       display: flex;
+       align-items: center;
+       gap: 14px;
+
+    }
+
+    & .middle{
+       flex: 0 1 50%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       gap: 14px;
+       height: 55px;
+    }
+    & .right{
+       flex: 0 1 14%;
+    }
+
+    .logo{
+        width: 130px;
+        height: 60px;
+    }
+    .inputWrapper{
+        flex: 90%;
+        display: flex;
+        justify-content: space-between;
+       height: 50px;
+        border-radius: 40px;
+        border: 1px solid $deep-gray;
+        & input{
+            flex: 1 1 90%;
+            // height: 100%;
+             background-color: $dark-gray;
+             font-size: 17px;
+             color: $text-gray;
+             padding: 0 20px 0 20px;
+             border: 0;
+             border-top-left-radius: 40px;
+             border-bottom-left-radius: 40px;
+             transition: $transition;
+             &:focus{
+                outline: 1.5px solid $blue;
+             }
+             & ::-webkit-search-icon{
+                width: 50px;
+                height: 50px;
+                // background-image: url('path/to/icon.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+             }
+        }
+       
+        & button{
+            flex: 0 0 15%;
+            background-color: $deep-gray;
+            height: 100%;
+           border-radius: 0px 40px 40px 0;
+        }
+    }
+    .roundBtn{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: $medium-gray;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $deep-gray;
+        }
+    }
+    .right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 16px;
+    }
+    .user{
+       display: flex;
+       justify-content: center; 
+       align-items: center;
+       width: 36px;
+       height: 36px;
+       border: 0;
+       border-radius: 50%;
+       background-color: $purple;
+       color: $white;
+       text-transform: uppercase;
+       font-weight: 400;
+       font-size: 18px;
+       cursor: pointer;
+    }
+ 
+}
